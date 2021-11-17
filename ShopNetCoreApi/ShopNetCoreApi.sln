@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopNetCoreApi.Models", "Sh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopNetCoreApi.Service", "ShopNetCoreApi.Service\ShopNetCoreApi.Service.csproj", "{D5DBDE30-4095-44E2-99E7-2D3D255DC88B}"
 EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{87CFB9B9-BA35-4948-9319-185F86255E8C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{D5DBDE30-4095-44E2-99E7-2D3D255DC88B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5DBDE30-4095-44E2-99E7-2D3D255DC88B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5DBDE30-4095-44E2-99E7-2D3D255DC88B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87CFB9B9-BA35-4948-9319-185F86255E8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87CFB9B9-BA35-4948-9319-185F86255E8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87CFB9B9-BA35-4948-9319-185F86255E8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87CFB9B9-BA35-4948-9319-185F86255E8C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

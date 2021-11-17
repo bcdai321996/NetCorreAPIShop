@@ -6,10 +6,14 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using ShopNetCoreApi.Models.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
+using ShopNetCoreApi.Data;
 
 namespace ShopNetCoreApi
 {
@@ -25,7 +29,30 @@ namespace ShopNetCoreApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy",
+                    builder => builder.AllowAnyOrigin()
+                        .AllowAnyOrigin()
+                        .AllowAnyMethod()
+                        .AllowAnyHeader());
+            });
+
             services.AddControllers();
+            services.Configure<AppConfig>(Configuration.GetSection("AppSetting"));
+            services.AddMemoryCache();
+            services.AddHttpContextAccessor();
+
+            services.AddDbContext<ShopDbContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), b=>b.MigrationsAssembly("ShopNetCoreApi"))
+            );
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Version = "1.0", Title = "ShopNetCoreApi" });
+
+
+
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -34,7 +61,11 @@ namespace ShopNetCoreApi
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseSwagger();
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "ShopNetCoreApi v1"));
             }
+            app.UseCors("CorsPolicy");
+           
 
             app.UseHttpsRedirection();
 

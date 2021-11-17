@@ -1,0 +1,45 @@
+networks:
+  your-network:
+    name: your-network
+services:
+  db:
+    depends_on:
+      migrations:
+        condition: service_started
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: Password@12345
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    networks:
+      your-network: {}
+    ports:
+    - published: 1433
+      target: 1433
+  migrations:
+    build:
+      context: D:\NetCoreApiShop\ShopNetCoreApi
+      dockerfile: ShopNetCoreApi/Migrations.Dockerfile
+    networks:
+      your-network: {}
+  shopnetcoreapi:
+    build:
+      context: D:\NetCoreApiShop\ShopNetCoreApi
+      dockerfile: ShopNetCoreApi/Dockerfile
+    depends_on:
+      db:
+        condition: service_started
+      migrations:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: shopnetcoreapi
+    networks:
+      your-network: {}
+    ports:
+    - target: 80
+    - target: 443
+    volumes:
+    - C:\Users\buico\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\buico\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+version: '3.4'

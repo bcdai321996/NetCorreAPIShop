@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "jQ4kt+AOcIbZWMteszRV1mUCzZ4/21w4ORT1edQVwNHwAzFS4I0u5LxyF9jNRRkpyHSbc8jR8EKelRguD1CmrQ==",
+  "success": true,
+  "projectFilePath": "D:\\NetCoreApiShop\\ShopNetCoreApi\\ShopNetCoreApi\\ShopNetCoreApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\buico\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.11.1\\microsoft.visualstudio.azure.containers.tools.targets.1.11.1.nupkg.sha512"
+  ],
+  "logs": []
+}

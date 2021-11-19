@@ -8,7 +8,6 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:3.1 AS build
 WORKDIR /src
 COPY ["ShopNetCoreApi/ShopNetCoreApi.csproj", "ShopNetCoreApi/"]
-COPY ["ShopNetCoreApi.Models/ShopNetCoreApi.Models.csproj", "ShopNetCoreApi.Models/"]
 RUN dotnet restore "ShopNetCoreApi/ShopNetCoreApi.csproj"
 COPY . .
 WORKDIR "/src/ShopNetCoreApi"

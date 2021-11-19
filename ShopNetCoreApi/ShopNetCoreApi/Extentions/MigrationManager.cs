@@ -4,7 +4,7 @@ using Microsoft.Extensions.Hosting;
 using System;
 using ShopNetCoreApi.Data;
 
-namespace web_code.Extensions
+namespace ShopNetCoreApi.Extensions
 {
     public static class MigrationManager
     {

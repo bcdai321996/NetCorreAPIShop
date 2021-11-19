@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\NetCoreApiShop\\ShopNetCoreApi\\ShopNetCoreApi.Models\\ShopNetCoreApi.Models.csproj": {}
+    "D:\\Project\\NetCoreShopping\\NetCorreAPIShop\\ShopNetCoreApi\\ShopNetCoreApi.Models\\ShopNetCoreApi.Models.csproj": {}
   },
   "projects": {
-    "d:\\NetCoreApiShop\\ShopNetCoreApi\\ShopNetCoreApi.Models\\ShopNetCoreApi.Models.csproj": {
+    "D:\\Project\\NetCoreShopping\\NetCorreAPIShop\\ShopNetCoreApi\\ShopNetCoreApi.Models\\ShopNetCoreApi.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\NetCoreApiShop\\ShopNetCoreApi\\ShopNetCoreApi.Models\\ShopNetCoreApi.Models.csproj",
+        "projectUniqueName": "D:\\Project\\NetCoreShopping\\NetCorreAPIShop\\ShopNetCoreApi\\ShopNetCoreApi.Models\\ShopNetCoreApi.Models.csproj",
         "projectName": "ShopNetCoreApi.Models",
-        "projectPath": "d:\\NetCoreApiShop\\ShopNetCoreApi\\ShopNetCoreApi.Models\\ShopNetCoreApi.Models.csproj",
+        "projectPath": "D:\\Project\\NetCoreShopping\\NetCorreAPIShop\\ShopNetCoreApi\\ShopNetCoreApi.Models\\ShopNetCoreApi.Models.csproj",
         "packagesPath": "C:\\Users\\buico\\.nuget\\packages\\",
-        "outputPath": "d:\\NetCoreApiShop\\ShopNetCoreApi\\ShopNetCoreApi.Models\\obj\\",
+        "outputPath": "D:\\Project\\NetCoreShopping\\NetCorreAPIShop\\ShopNetCoreApi\\ShopNetCoreApi.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\buico\\AppData\\Roaming\\NuGet\\NuGet.Config",

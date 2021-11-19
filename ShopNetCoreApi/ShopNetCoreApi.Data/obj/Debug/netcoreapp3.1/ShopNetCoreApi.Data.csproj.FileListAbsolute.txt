@@ -1,0 +1,15 @@
+D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi.Data\bin\Debug\netcoreapp3.1\ShopNetCoreApi.Data.deps.json
+D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi.Data\bin\Debug\netcoreapp3.1\ShopNetCoreApi.Data.runtimeconfig.json
+D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi.Data\bin\Debug\netcoreapp3.1\ShopNetCoreApi.Data.runtimeconfig.dev.json
+D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi.Data\bin\Debug\netcoreapp3.1\ShopNetCoreApi.Data.dll
+D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi.Data\bin\Debug\netcoreapp3.1\ShopNetCoreApi.Data.pdb
+D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi.Data\bin\Debug\netcoreapp3.1\ShopNetCoreApi.Models.dll
+D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi.Data\bin\Debug\netcoreapp3.1\ShopNetCoreApi.Models.pdb
+D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi.Data\obj\Debug\netcoreapp3.1\ShopNetCoreApi.Data.csproj.AssemblyReference.cache
+D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi.Data\obj\Debug\netcoreapp3.1\ShopNetCoreApi.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi.Data\obj\Debug\netcoreapp3.1\ShopNetCoreApi.Data.AssemblyInfoInputs.cache
+D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi.Data\obj\Debug\netcoreapp3.1\ShopNetCoreApi.Data.AssemblyInfo.cs
+D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi.Data\obj\Debug\netcoreapp3.1\ShopNetCoreApi.Data.csproj.CoreCompileInputs.cache
+D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi.Data\obj\Debug\netcoreapp3.1\ShopNetCoreApi.Data.dll
+D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi.Data\obj\Debug\netcoreapp3.1\ShopNetCoreApi.Data.pdb
+D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi.Data\obj\Debug\netcoreapp3.1\ShopNetCoreApi.Data.genruntimeconfig.cache

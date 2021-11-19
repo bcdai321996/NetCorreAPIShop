@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.EntityFrameworkCore;
 using ShopNetCoreApi.Models.Entities;
+using Version = ShopNetCoreApi.Models.Entities.Version;
 
 namespace ShopNetCoreApi.Data
 {
@@ -17,6 +18,10 @@ namespace ShopNetCoreApi.Data
         {
             modelBuilder.Entity<OrderDetail>().HasKey(i => new {i.OrderId, i.ProductId});
             modelBuilder.Entity<Permission>().HasKey(i => new { i.ActionId, i.FunctionId });
+            modelBuilder.Entity<Product>().ToTable("Products");
+            modelBuilder.Entity<AppUser>().ToTable("AppUsers");
+            modelBuilder.Entity<AppUserRole>().ToTable("AppUserRoles");
+            modelBuilder.Entity<Role>().ToTable("Roles");
 
 
         }
@@ -37,6 +42,10 @@ namespace ShopNetCoreApi.Data
         public DbSet<Promotion> Promotions { get; set; }
         public DbSet<Role> Roles { get; set; }
         public DbSet<Transaction> Transactions { get; set; }
+
+        public DbSet<Version> Versions { get; set; }
+
+        
 
 
     }

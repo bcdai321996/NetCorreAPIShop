@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\NetCoreApiShop\\ShopNetCoreApi\\ShopNetCoreApi.Service\\ShopNetCoreApi.Service.csproj": {}
+    "D:\\Project\\NetCoreShopping\\NetCorreAPIShop\\ShopNetCoreApi\\ShopNetCoreApi.Service\\ShopNetCoreApi.Service.csproj": {}
   },
   "projects": {
-    "d:\\NetCoreApiShop\\ShopNetCoreApi\\ShopNetCoreApi.Service\\ShopNetCoreApi.Service.csproj": {
+    "D:\\Project\\NetCoreShopping\\NetCorreAPIShop\\ShopNetCoreApi\\ShopNetCoreApi.Service\\ShopNetCoreApi.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\NetCoreApiShop\\ShopNetCoreApi\\ShopNetCoreApi.Service\\ShopNetCoreApi.Service.csproj",
+        "projectUniqueName": "D:\\Project\\NetCoreShopping\\NetCorreAPIShop\\ShopNetCoreApi\\ShopNetCoreApi.Service\\ShopNetCoreApi.Service.csproj",
         "projectName": "ShopNetCoreApi.Service",
-        "projectPath": "d:\\NetCoreApiShop\\ShopNetCoreApi\\ShopNetCoreApi.Service\\ShopNetCoreApi.Service.csproj",
+        "projectPath": "D:\\Project\\NetCoreShopping\\NetCorreAPIShop\\ShopNetCoreApi\\ShopNetCoreApi.Service\\ShopNetCoreApi.Service.csproj",
         "packagesPath": "C:\\Users\\buico\\.nuget\\packages\\",
-        "outputPath": "d:\\NetCoreApiShop\\ShopNetCoreApi\\ShopNetCoreApi.Service\\obj\\",
+        "outputPath": "D:\\Project\\NetCoreShopping\\NetCorreAPIShop\\ShopNetCoreApi\\ShopNetCoreApi.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\buico\\AppData\\Roaming\\NuGet\\NuGet.Config",

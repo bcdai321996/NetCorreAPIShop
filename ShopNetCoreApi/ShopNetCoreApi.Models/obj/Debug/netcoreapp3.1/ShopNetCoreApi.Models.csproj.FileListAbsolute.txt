@@ -1,0 +1,9 @@
+D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi.Models\bin\Debug\netcoreapp3.1\ShopNetCoreApi.Models.deps.json
+D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi.Models\bin\Debug\netcoreapp3.1\ShopNetCoreApi.Models.dll
+D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi.Models\bin\Debug\netcoreapp3.1\ShopNetCoreApi.Models.pdb
+D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi.Models\obj\Debug\netcoreapp3.1\ShopNetCoreApi.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi.Models\obj\Debug\netcoreapp3.1\ShopNetCoreApi.Models.AssemblyInfoInputs.cache
+D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi.Models\obj\Debug\netcoreapp3.1\ShopNetCoreApi.Models.AssemblyInfo.cs
+D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi.Models\obj\Debug\netcoreapp3.1\ShopNetCoreApi.Models.csproj.CoreCompileInputs.cache
+D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi.Models\obj\Debug\netcoreapp3.1\ShopNetCoreApi.Models.dll
+D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi.Models\obj\Debug\netcoreapp3.1\ShopNetCoreApi.Models.pdb

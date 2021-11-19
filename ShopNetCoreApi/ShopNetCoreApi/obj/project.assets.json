@@ -6069,11 +6069,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\NetCoreApiShop\\ShopNetCoreApi\\ShopNetCoreApi\\ShopNetCoreApi.csproj",
+      "projectUniqueName": "D:\\Project\\NetCoreShopping\\NetCorreAPIShop\\ShopNetCoreApi\\ShopNetCoreApi\\ShopNetCoreApi.csproj",
       "projectName": "ShopNetCoreApi",
-      "projectPath": "d:\\NetCoreApiShop\\ShopNetCoreApi\\ShopNetCoreApi\\ShopNetCoreApi.csproj",
+      "projectPath": "D:\\Project\\NetCoreShopping\\NetCorreAPIShop\\ShopNetCoreApi\\ShopNetCoreApi\\ShopNetCoreApi.csproj",
       "packagesPath": "C:\\Users\\buico\\.nuget\\packages\\",
-      "outputPath": "d:\\NetCoreApiShop\\ShopNetCoreApi\\ShopNetCoreApi\\obj\\",
+      "outputPath": "D:\\Project\\NetCoreShopping\\NetCorreAPIShop\\ShopNetCoreApi\\ShopNetCoreApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\buico\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6090,11 +6090,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "d:\\NetCoreApiShop\\ShopNetCoreApi\\ShopNetCoreApi.Data\\ShopNetCoreApi.Data.csproj": {
-              "projectPath": "d:\\NetCoreApiShop\\ShopNetCoreApi\\ShopNetCoreApi.Data\\ShopNetCoreApi.Data.csproj"
+            "D:\\Project\\NetCoreShopping\\NetCorreAPIShop\\ShopNetCoreApi\\ShopNetCoreApi.Data\\ShopNetCoreApi.Data.csproj": {
+              "projectPath": "D:\\Project\\NetCoreShopping\\NetCorreAPIShop\\ShopNetCoreApi\\ShopNetCoreApi.Data\\ShopNetCoreApi.Data.csproj"
             },
-            "d:\\NetCoreApiShop\\ShopNetCoreApi\\ShopNetCoreApi.Models\\ShopNetCoreApi.Models.csproj": {
-              "projectPath": "d:\\NetCoreApiShop\\ShopNetCoreApi\\ShopNetCoreApi.Models\\ShopNetCoreApi.Models.csproj"
+            "D:\\Project\\NetCoreShopping\\NetCorreAPIShop\\ShopNetCoreApi\\ShopNetCoreApi.Models\\ShopNetCoreApi.Models.csproj": {
+              "projectPath": "D:\\Project\\NetCoreShopping\\NetCorreAPIShop\\ShopNetCoreApi\\ShopNetCoreApi.Models\\ShopNetCoreApi.Models.csproj"
             }
           }
         }

@@ -8,44 +8,44 @@ using System.Linq;
 
 namespace ShopNetCoreApi.Data.Infrastructure
 {
-    public abstract class RepositoryBase<T> : IRepository<T> where T : class
+    public  class RepositoryBase<T> : IRepository<T> where T : class
     {
         private readonly ShopDbContext _shopDbContext;
         private readonly DbSet<T> _entities;
 
-        public RepositoryBase(ShopDbContext shopDbContext)
+        protected RepositoryBase(ShopDbContext shopDbContext)
         {
             this._shopDbContext = shopDbContext;
             _entities = shopDbContext.Set<T>();
         }
-        public virtual EntityEntry<T> Add(T entity)
+        public  EntityEntry<T> Add(T entity)
         {
             return _entities.Add(entity);
         }
 
-        public virtual bool CheckContains(Expression<Func<T, bool>> predicate)
+        public  bool CheckContains(Expression<Func<T, bool>> predicate)
         {
             return _shopDbContext.Set<T>().Count<T>(predicate) > 0; ;
         }
 
-        public virtual int Count(Expression<Func<T, bool>> where)
+        public  int Count(Expression<Func<T, bool>> where)
         {
             return _entities.Count(where);
         }
 
-        public virtual EntityEntry<T> Delete(T entity)
+        public  EntityEntry<T> Delete(T entity)
         {
             return _entities.Remove(entity);
         }
 
-        public virtual void DeleteMulti(Expression<Func<T, bool>> where)
+        public  void DeleteMulti(Expression<Func<T, bool>> where)
         {
             IEnumerable<T> objects = _entities.Where<T>(where).AsEnumerable();
             foreach (T obj in objects)
                 _entities.Remove(obj);
         }
 
-        public virtual IEnumerable<T> GetAll(string[] includes = null)
+        public  IEnumerable<T> GetAll(string[] includes = null)
         {
             if (includes != null && includes.Count() > 0)
             {
@@ -58,7 +58,7 @@ namespace ShopNetCoreApi.Data.Infrastructure
             return _shopDbContext.Set<T>().AsQueryable();
         }
 
-        public virtual IEnumerable<T> GetMulti(Expression<Func<T, bool>> predicate, string[] includes = null)
+        public  IEnumerable<T> GetMulti(Expression<Func<T, bool>> predicate, string[] includes = null)
         {
             if (includes != null && includes.Count() > 0)
             {
@@ -71,7 +71,7 @@ namespace ShopNetCoreApi.Data.Infrastructure
             return _shopDbContext.Set<T>().Where<T>(predicate).AsQueryable<T>();
         }
 
-        public virtual IEnumerable<T> GetMultiPaging(Expression<Func<T, bool>> predicate, out int total, int index = 0, int size = 50, string[] includes = null)
+        public  IEnumerable<T> GetMultiPaging(Expression<Func<T, bool>> predicate, out int total, int index = 0, int size = 50, string[] includes = null)
         {
             int skipCount = index * size;
             IQueryable<T> _resetSet;
@@ -93,7 +93,7 @@ namespace ShopNetCoreApi.Data.Infrastructure
             return _resetSet.AsQueryable();
         }
 
-        public virtual T GetSingleByCondition(Expression<Func<T, bool>> expression, string[] includes = null)
+        public  T GetSingleByCondition(Expression<Func<T, bool>> expression, string[] includes = null)
         {
             if (includes != null && includes.Count() > 0)
             {
@@ -105,12 +105,12 @@ namespace ShopNetCoreApi.Data.Infrastructure
             return _shopDbContext.Set<T>().FirstOrDefault(expression);
         }
 
-        public virtual T GetSingleById(int id)
+        public  T GetSingleById(int id)
         {
             return _entities.Find(id);
         }
 
-        public virtual void Update(T entity)
+        public  void Update(T entity)
         {
             _entities.Attach(entity);
             _shopDbContext.Entry(entity).State = EntityState.Modified;

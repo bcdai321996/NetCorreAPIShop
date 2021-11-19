@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6dnZjj8Hyk5lo3k7qJexE635P9tt4dAlmVGW/pe67WvaiQYERhyaIV+MjT3gU9Mv4x7B5qCfnCypWm0LsCI9bg==",
+  "dgSpecHash": "im73B1xj5r0xJB9Vu5/ygDTteEXJK9lCXnWkxZI03qsHvorMTXnzy1jOF6yb1JGC/yCLuvXcaZJbElwj2wDLUA==",
   "success": true,
-  "projectFilePath": "d:\\NetCoreApiShop\\ShopNetCoreApi\\ShopNetCoreApi.Common\\ShopNetCoreApi.Common.csproj",
+  "projectFilePath": "D:\\Project\\NetCoreShopping\\NetCorreAPIShop\\ShopNetCoreApi\\ShopNetCoreApi.Common\\ShopNetCoreApi.Common.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\buico\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\buico\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

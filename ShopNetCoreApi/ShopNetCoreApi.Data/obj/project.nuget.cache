@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "46J++EylhU8JWDp/znqE7+D3LbJ2GiM6NC9ul+jnuZgAk6dZFnY4EGcHv1lPdw5YTTiQfOfss4i2XBHZRyVo4A==",
+  "dgSpecHash": "c7nNK9qFsdwwEQodKhIZ/dUXkFhURtzTA6crIudQmyVuTtvaIiPn0pJilOLBoSYOz0cgo1HfJNhYbxNeg42tTw==",
   "success": true,
-  "projectFilePath": "d:\\NetCoreApiShop\\ShopNetCoreApi\\ShopNetCoreApi.Data\\ShopNetCoreApi.Data.csproj",
+  "projectFilePath": "D:\\Project\\NetCoreShopping\\NetCorreAPIShop\\ShopNetCoreApi\\ShopNetCoreApi.Data\\ShopNetCoreApi.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\buico\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\buico\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

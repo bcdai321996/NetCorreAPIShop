@@ -14,6 +14,8 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using ShopNetCoreApi.Data;
+using ShopNetCoreApi.Data.Infrastructure;
+using ShopNetCoreApi.Data.Repositories;
 
 namespace ShopNetCoreApi
 {
@@ -29,14 +31,7 @@ namespace ShopNetCoreApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddCors(options =>
-            {
-                options.AddPolicy("CorsPolicy",
-                    builder => builder.AllowAnyOrigin()
-                        .AllowAnyOrigin()
-                        .AllowAnyMethod()
-                        .AllowAnyHeader());
-            });
+            services.AddCors();
 
             services.AddControllers();
             services.Configure<AppConfig>(Configuration.GetSection("AppSetting"));
@@ -53,6 +48,10 @@ namespace ShopNetCoreApi
 
 
             });
+            services.AddScoped(typeof(IRepository<>),typeof(RepositoryBase<>));
+            services.AddScoped<IUserRepositories, UserRepositories>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -64,12 +63,13 @@ namespace ShopNetCoreApi
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "ShopNetCoreApi v1"));
             }
-            app.UseCors("CorsPolicy");
-           
-
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+             app.UseCors(x=>x.AllowAnyHeader().
+                            AllowAnyMethod().
+                            AllowAnyMethod());
 
             app.UseAuthorization();
 

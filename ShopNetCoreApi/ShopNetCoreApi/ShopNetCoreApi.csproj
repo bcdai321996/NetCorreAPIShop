@@ -31,5 +31,9 @@
     <ProjectReference Include="..\ShopNetCoreApi.Models\ShopNetCoreApi.Models.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
 
 </Project>

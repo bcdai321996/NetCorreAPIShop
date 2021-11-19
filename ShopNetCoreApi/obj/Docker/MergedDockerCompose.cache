@@ -8,7 +8,7 @@ services:
         condition: service_started
     environment:
       ACCEPT_EULA: "Y"
-      SA_PASSWORD: Password@12345
+      SA_PASSWORD: Bcdai@321996
     image: mcr.microsoft.com/mssql/server:2019-latest
     networks:
       your-network: {}
@@ -17,13 +17,13 @@ services:
       target: 1433
   migrations:
     build:
-      context: D:\NetCoreApiShop\ShopNetCoreApi
+      context: D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi
       dockerfile: ShopNetCoreApi/Migrations.Dockerfile
     networks:
       your-network: {}
   shopnetcoreapi:
     build:
-      context: D:\NetCoreApiShop\ShopNetCoreApi
+      context: D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi
       dockerfile: ShopNetCoreApi/Dockerfile
     depends_on:
       db:
@@ -37,6 +37,8 @@ services:
     networks:
       your-network: {}
     ports:
+    - published: 9080
+      target: 80
     - target: 80
     - target: 443
     volumes:

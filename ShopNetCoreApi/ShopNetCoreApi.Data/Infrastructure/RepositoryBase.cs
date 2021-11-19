@@ -20,7 +20,7 @@ namespace ShopNetCoreApi.Data.Infrastructure
         }
         public  void Add(T entity)
         {
-            return _entities.Add(entity);
+             _entities.Add(entity);
         }
 
         public  bool CheckContains(Expression<Func<T, bool>> predicate)

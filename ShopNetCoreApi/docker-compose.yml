@@ -9,7 +9,6 @@ services:
     ports:
       - "9080:80"
     depends_on:
-      - migrations
       - db  
     networks:
       - your-network
@@ -20,16 +19,9 @@ services:
       ACCEPT_EULA: "Y"
     ports:
     - "1433:1433"
-    depends_on: 
-      - migrations
     networks:
       - your-network
-  migrations:
-    build: 
-      context: .
-      dockerfile: ShopNetCoreApi/Migrations.Dockerfile
-    networks:
-      - your-network
+   
 networks:
   your-network:
         name: your-network

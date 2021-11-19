@@ -67,7 +67,6 @@ D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi\obj\Deb
 D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi\obj\Debug\netcoreapp3.1\staticwebassets\ShopNetCoreApi.StaticWebAssets.xml
 D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi\obj\Debug\netcoreapp3.1\scopedcss\bundle\ShopNetCoreApi.styles.css
 D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi\obj\Debug\netcoreapp3.1\ShopNetCoreApi.RazorTargetAssemblyInfo.cache
-D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi\obj\Debug\netcoreapp3.1\ShopNetCoreApi.csproj.CopyComplete
 D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi\obj\Debug\netcoreapp3.1\ShopNetCoreApi.dll
 D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi\obj\Debug\netcoreapp3.1\ShopNetCoreApi.pdb
 D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi\obj\Debug\netcoreapp3.1\ShopNetCoreApi.genruntimeconfig.cache

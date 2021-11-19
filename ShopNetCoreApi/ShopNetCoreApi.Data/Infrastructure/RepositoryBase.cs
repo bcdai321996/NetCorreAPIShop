@@ -18,7 +18,7 @@ namespace ShopNetCoreApi.Data.Infrastructure
             this._shopDbContext = shopDbContext;
             _entities = shopDbContext.Set<T>();
         }
-        public  EntityEntry<T> Add(T entity)
+        public  void Add(T entity)
         {
             return _entities.Add(entity);
         }

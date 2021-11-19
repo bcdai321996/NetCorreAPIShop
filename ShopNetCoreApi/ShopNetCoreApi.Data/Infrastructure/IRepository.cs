@@ -9,7 +9,7 @@ namespace ShopNetCoreApi.Data.Infrastructure
     public interface IRepository<T> where T : class
     {
         // Marks an entity as new
-        EntityEntry<T> Add(T entity);
+        void Add(T entity);
 
         // Marks an entity as modified
         void Update(T entity);

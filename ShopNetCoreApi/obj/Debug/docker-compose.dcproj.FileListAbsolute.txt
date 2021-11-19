@@ -15,10 +15,10 @@ D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\bin\Debug\Swashbuckle.
 D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\bin\Debug\ShopNetCoreApi.Data.dll
 D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\bin\Debug\ShopNetCoreApi.Models.dll
 D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\bin\Debug\Microsoft.Extensions.Options.dll
 D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\bin\Debug\Swashbuckle.AspNetCore.Swagger.dll
 D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
 D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\bin\Debug\Microsoft.OpenApi.dll
-D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\bin\Debug\Microsoft.Extensions.Options.dll
 D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
 D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
 D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\bin\Debug\System.Diagnostics.DiagnosticSource.dll

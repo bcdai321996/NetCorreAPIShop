@@ -10,12 +10,14 @@ namespace ShopNetCoreApi.Extensions
     {
         public static IHost MigrateDatabase(this IHost host)
         {
+            
             using (var scope = host.Services.CreateScope())
             {
                 using (var appContext = scope.ServiceProvider.GetRequiredService<ShopDbContext>())
                 {
                     try
                     {
+                       
                         appContext.Database.Migrate();
                         Console.WriteLine("Database has been migrated");
                     }

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ShopNetCoreApi.Data.Infrastructure;
+using ShopNetCoreApi.Extentions;
 using ShopNetCoreApi.Models.Entities;
 
 namespace ShopNetCoreApi.Controllers
@@ -24,6 +25,14 @@ namespace ShopNetCoreApi.Controllers
         {
             var user = _unitOfWork.UserRepositories.GetAll();
             return Ok(user);
+
+        }
+        [HttpPost("CreateUser")]
+        public ActionResult<IEnumerable<AppUser>> CreateUser([FromBody] AppUser user)
+        {
+             _unitOfWork.UserRepositories.Add(user);
+            _unitOfWork.CompleteAsync();
+            return Ok(new Responses("Success", "User create successfully","200"));
 
         }
     }

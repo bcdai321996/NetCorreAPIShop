@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Text;
+using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 
 namespace ShopNetCoreApi.Data.Infrastructure
@@ -25,7 +26,7 @@ namespace ShopNetCoreApi.Data.Infrastructure
 
         T GetSingleByCondition(Expression<Func<T, bool>> expression, string[] includes = null);
 
-        IEnumerable<T> GetAll(string[] includes = null);
+        Task<IEnumerable<T>> GetAll(string[] includes = null);
 
         IEnumerable<T> GetMulti(Expression<Func<T, bool>> predicate, string[] includes = null);
 
@@ -34,5 +35,7 @@ namespace ShopNetCoreApi.Data.Infrastructure
         int Count(Expression<Func<T, bool>> where);
 
         bool CheckContains(Expression<Func<T, bool>> predicate);
+
+        void CreatePasswordHash(string passWordUser, out byte[] passwordHash, out byte[] PasswordSalt);
     }
 }

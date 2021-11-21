@@ -22,6 +22,7 @@ using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.WebEncoders;
 using System.Text.Encodings.Web;
 using System.Text.Unicode;
+using Microsoft.AspNetCore.Identity;
 using ShopNetCoreApi.Extentions;
 
 namespace ShopNetCoreApi
@@ -64,9 +65,15 @@ namespace ShopNetCoreApi
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Version = "1.0", Title = "ShopNetCoreApi" });
 
-
-
             });
+            services.AddAuthentication(option =>
+                {
+                    option.DefaultAuthenticateScheme = IdentityConstants.ApplicationScheme;
+                    option.DefaultChallengeScheme = IdentityConstants.ApplicationScheme;
+                    option.DefaultSignInScheme = IdentityConstants.ExternalScheme;
+                }
+            );
+            
             services.AddScoped(typeof(IRepository<>),typeof(RepositoryBase<>));
             services.AddScoped<IUserRepositories, UserRepositories>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
@@ -85,16 +92,14 @@ namespace ShopNetCoreApi
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "ShopNetCoreApi v1"));
             }
-            
-            
-
-             app.UseCors("CorsPolicy");
+            app.UseCors("CorsPolicy");
              app.UseHttpsRedirection();
              var serviceProvider = app.ApplicationServices;
              var httpContextAccessor = serviceProvider.GetRequiredService<IHttpContextAccessor>();
              AuthContextService.Configure(httpContextAccessor);
-
-            app.UseAuthorization();
+             app.UseMiddleware<JwtMiddlewares>();
+             app.UseAuthorization();
+             
 
             app.UseEndpoints(endpoints =>
             {

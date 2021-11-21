@@ -5,6 +5,7 @@ using System.Linq.Expressions;
 using System.Text;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace ShopNetCoreApi.Data.Infrastructure
 {
@@ -33,6 +34,17 @@ namespace ShopNetCoreApi.Data.Infrastructure
             return _entities.Count(where);
         }
 
+        public void CreatePasswordHash(string passWordUser, out byte[] passwordHash, out byte[] PasswordSalt)
+        {
+            if (passWordUser == null) throw new ArgumentNullException("passWord");
+            if (string.IsNullOrWhiteSpace(passWordUser)) throw new ArgumentException("Value cannot be empty or whitespace only string.", "password");
+            using (var hmac = new System.Security.Cryptography.HMACSHA512())
+            {
+                PasswordSalt = hmac.Key;
+                passwordHash = hmac.ComputeHash(System.Text.Encoding.UTF8.GetBytes(passWordUser));
+            }
+        }
+
         public  EntityEntry<T> Delete(T entity)
         {
             return _entities.Remove(entity);
@@ -45,7 +57,7 @@ namespace ShopNetCoreApi.Data.Infrastructure
                 _entities.Remove(obj);
         }
 
-        public  IEnumerable<T> GetAll(string[] includes = null)
+        public  async Task<IEnumerable<T>> GetAll(string[] includes = null)
         {
             if (includes != null && includes.Count() > 0)
             {

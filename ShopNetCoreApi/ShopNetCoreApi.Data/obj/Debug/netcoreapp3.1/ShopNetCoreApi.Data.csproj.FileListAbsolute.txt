@@ -13,3 +13,4 @@ D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi.Data\ob
 D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi.Data\obj\Debug\netcoreapp3.1\ShopNetCoreApi.Data.dll
 D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi.Data\obj\Debug\netcoreapp3.1\ShopNetCoreApi.Data.pdb
 D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi.Data\obj\Debug\netcoreapp3.1\ShopNetCoreApi.Data.genruntimeconfig.cache
+D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi.Data\obj\Debug\netcoreapp3.1\ShopNetCoreApi.Data.csproj.CopyComplete

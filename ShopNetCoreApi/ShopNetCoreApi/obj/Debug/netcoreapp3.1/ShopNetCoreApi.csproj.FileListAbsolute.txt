@@ -61,7 +61,6 @@ D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi\obj\Deb
 D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi\obj\Debug\netcoreapp3.1\ShopNetCoreApi.AssemblyInfoInputs.cache
 D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi\obj\Debug\netcoreapp3.1\ShopNetCoreApi.AssemblyInfo.cs
 D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi\obj\Debug\netcoreapp3.1\ShopNetCoreApi.csproj.CoreCompileInputs.cache
-D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi\obj\Debug\netcoreapp3.1\ShopNetCoreApi.MvcApplicationPartsAssemblyInfo.cs
 D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi\obj\Debug\netcoreapp3.1\ShopNetCoreApi.MvcApplicationPartsAssemblyInfo.cache
 D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi\obj\Debug\netcoreapp3.1\staticwebassets\ShopNetCoreApi.StaticWebAssets.Manifest.cache
 D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi\obj\Debug\netcoreapp3.1\staticwebassets\ShopNetCoreApi.StaticWebAssets.xml

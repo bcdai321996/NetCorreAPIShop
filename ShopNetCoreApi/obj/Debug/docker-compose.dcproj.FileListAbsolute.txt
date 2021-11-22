@@ -38,4 +38,3 @@ D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\bin\Debug\ShopNetCoreA
 D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\bin\Debug\ShopNetCoreApi.Models.pdb
 D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
 D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
-D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\obj\Debug\docker-compose.dcproj.CopyComplete

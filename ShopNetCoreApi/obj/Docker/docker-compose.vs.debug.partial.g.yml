@@ -3,7 +3,7 @@ version: '3.4'
 services:
   shopnetcoreapi:
     image: shopnetcoreapi:dev
-    container_name: ShopNetCoreApi
+    container_name: ShopNetCoreApi_1
     build:
       target: base
       labels:

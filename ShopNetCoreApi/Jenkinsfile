@@ -3,6 +3,11 @@ pipeline {
   environment {
     DOCKER_IMAGE = "bcdai321996/shopnetcoreapi"
   }
+  stages {
+     steps {
+        echo "Test"
+     }
+  }
   
   stages {
     stage("build") {

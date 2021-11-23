@@ -3,7 +3,7 @@ pipeline {
   environment {
     DOCKER_IMAGE = "bcdai321996/shopnetcoreapi"
   }
-  
+  stages {
     stage("build") {
       agent { node {label 'master'}}
       environment {

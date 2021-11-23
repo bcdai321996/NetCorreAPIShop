@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   shopnetcoreapi:
-    image: ${DOCKER_REGISTRY-}shopnetcoreapi
+    image: shopnetcoreapi
     build:
       context: .
       dockerfile: ShopNetCoreApi/Dockerfile

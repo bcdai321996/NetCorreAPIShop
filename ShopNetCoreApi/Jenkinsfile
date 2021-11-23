@@ -7,9 +7,9 @@ pipeline {
   stages {
     stage('Hello') {
             steps {
-                bat label: '', script: '''#!/bin/bash
-                    echo "hello world" 
-                '''
+              bat label: '', script: {
+               echo "hello world" 
+              }
             }
     }
     stage("build") {

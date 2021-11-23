@@ -1,7 +1,7 @@
 pipeline {
   agent any
   environment {
-    DOCKER_IMAGE = "bcdai321996/shopnetcoreapi"
+    DOCKER_IMAGE = "${DOCKER_REGISTRY-}shopnetcoreapi"
   }
   stages {
      stage('hello') {

@@ -4,9 +4,11 @@ pipeline {
     DOCKER_IMAGE = "bcdai321996/shopnetcoreapi"
   }
   stages {
+    stage("test") {
      steps {
         echo "Test"
      }
+    }
   }
   
   stages {

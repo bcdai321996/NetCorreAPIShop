@@ -4,6 +4,9 @@ pipeline {
     DOCKER_IMAGE = "daibc321996/shopnetcoreapi"
   }
   stages {
+    stage("hello") {
+      echo "Hello"
+    }
   
     stage("build") {
       agent { node {label '!master'}}

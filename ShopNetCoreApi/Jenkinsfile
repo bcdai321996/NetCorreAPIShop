@@ -5,9 +5,7 @@ pipeline {
   }
   
   stages {
-    stage ("checkout"){
-      checkout scm
-    }
+   
         
     stage("build") {
       agent { node {label '!master'}}

@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   shopnetcoreapi:
-    container_name: ShopNetCoreApi_1
+    container_name: ShopNetCoreApi
     build:
       labels:
         com.microsoft.created-by: "visual-studio"

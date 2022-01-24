@@ -42,10 +42,16 @@ namespace ShopNetCoreApi.Data
         public DbSet<Promotion> Promotions { get; set; }
         public DbSet<Role> Roles { get; set; }
         public DbSet<Transaction> Transactions { get; set; }
+        public DbSet<Models.Entities.Action> Versions { get; set; }
 
-        public DbSet<Version> Versions { get; set; }
+        public DbSet<Employee> Employees { get; set; }
 
-        
+        public DbSet<Skill> Skills { get; set; }
+
+        public DbSet<JobHistory> JobHistorys { get; set; }
+        public DbSet<Education> Educations { get; set; }
+
+
 
 
     }

@@ -8,3 +8,13 @@ D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi.Models\
 D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi.Models\obj\Debug\netcoreapp3.1\ShopNetCoreApi.Models.dll
 D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi.Models\obj\Debug\netcoreapp3.1\ShopNetCoreApi.Models.pdb
 D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi.Models\obj\Debug\netcoreapp3.1\ShopNetCoreApi.Models.csproj.AssemblyReference.cache
+C:\Users\buico\Desktop\CodeManagerment\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi.Models\bin\Debug\netcoreapp3.1\ShopNetCoreApi.Models.deps.json
+C:\Users\buico\Desktop\CodeManagerment\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi.Models\bin\Debug\netcoreapp3.1\ShopNetCoreApi.Models.dll
+C:\Users\buico\Desktop\CodeManagerment\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi.Models\bin\Debug\netcoreapp3.1\ShopNetCoreApi.Models.pdb
+C:\Users\buico\Desktop\CodeManagerment\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi.Models\obj\Debug\netcoreapp3.1\ShopNetCoreApi.Models.csproj.AssemblyReference.cache
+C:\Users\buico\Desktop\CodeManagerment\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi.Models\obj\Debug\netcoreapp3.1\ShopNetCoreApi.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\buico\Desktop\CodeManagerment\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi.Models\obj\Debug\netcoreapp3.1\ShopNetCoreApi.Models.AssemblyInfoInputs.cache
+C:\Users\buico\Desktop\CodeManagerment\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi.Models\obj\Debug\netcoreapp3.1\ShopNetCoreApi.Models.AssemblyInfo.cs
+C:\Users\buico\Desktop\CodeManagerment\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi.Models\obj\Debug\netcoreapp3.1\ShopNetCoreApi.Models.csproj.CoreCompileInputs.cache
+C:\Users\buico\Desktop\CodeManagerment\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi.Models\obj\Debug\netcoreapp3.1\ShopNetCoreApi.Models.dll
+C:\Users\buico\Desktop\CodeManagerment\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi.Models\obj\Debug\netcoreapp3.1\ShopNetCoreApi.Models.pdb

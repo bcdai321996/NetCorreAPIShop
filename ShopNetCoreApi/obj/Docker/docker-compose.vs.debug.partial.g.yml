@@ -3,7 +3,7 @@ version: '3.4'
 services:
   shopnetcoreapi:
     image: shopnetcoreapi:dev
-    container_name: ShopNetCoreApi_1
+    container_name: ShopNetCoreApi
     build:
       target: base
       labels:
@@ -14,8 +14,8 @@ services:
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
       - NUGET_FALLBACK_PACKAGES=
     volumes:
-      - D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi:/app
-      - D:\Project\NetCoreShopping\NetCorreAPIShop\ShopNetCoreApi:/src
+      - C:\Users\buico\Desktop\CodeManagerment\NetCorreAPIShop\ShopNetCoreApi\ShopNetCoreApi:/app
+      - C:\Users\buico\Desktop\CodeManagerment\NetCorreAPIShop\ShopNetCoreApi:/src
       - C:\Users\buico\vsdbg\vs2017u5:/remote_debugger:rw
       - C:\Users\buico\.nuget\packages\:/root/.nuget/packages:ro
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro

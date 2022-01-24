@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   shopnetcoreapi:
-    image: shopnetcoreapi
+    image: ${DOCKER_REGISTRY-}shopnetcoreapi
     build:
       context: .
       dockerfile: ShopNetCoreApi/Dockerfile
@@ -21,7 +21,14 @@ services:
     - "1433:1433"
     networks:
       - your-network
+    volumes:
+       - /var/lib/sql/data
+    restart: always
    
 networks:
   your-network:
         name: your-network
+
+
+
+   

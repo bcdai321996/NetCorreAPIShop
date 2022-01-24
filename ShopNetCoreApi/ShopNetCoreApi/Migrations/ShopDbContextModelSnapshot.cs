@@ -37,7 +37,7 @@ namespace ShopNetCoreApi.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Actions");
+                    b.ToTable("Action");
                 });
 
             modelBuilder.Entity("ShopNetCoreApi.Models.Entities.AppUser", b =>
@@ -63,6 +63,9 @@ namespace ShopNetCoreApi.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PassWord")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PasswordSalt")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PhoneNumber")
@@ -162,6 +165,83 @@ namespace ShopNetCoreApi.Migrations
                     b.ToTable("Categories");
                 });
 
+            modelBuilder.Entity("ShopNetCoreApi.Models.Entities.Education", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Degree")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("EducationInformation")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("EmployeeId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("EndDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("StartDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UniversityName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("EmployeeId");
+
+                    b.ToTable("Educations");
+                });
+
+            modelBuilder.Entity("ShopNetCoreApi.Models.Entities.Employee", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Address")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Age")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreateDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Facebook")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Image")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Linkedin")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhoneHome")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhonePesional")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Employees");
+                });
+
             modelBuilder.Entity("ShopNetCoreApi.Models.Entities.Feedback", b =>
                 {
                     b.Property<int>("Id")
@@ -212,6 +292,38 @@ namespace ShopNetCoreApi.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Functions");
+                });
+
+            modelBuilder.Entity("ShopNetCoreApi.Models.Entities.JobHistory", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("CompanyName")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("EmployeeId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("EndDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("JobInformation")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("StartDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("EmployeeId");
+
+                    b.ToTable("JobHistorys");
                 });
 
             modelBuilder.Entity("ShopNetCoreApi.Models.Entities.Order", b =>
@@ -434,6 +546,32 @@ namespace ShopNetCoreApi.Migrations
                     b.ToTable("Roles");
                 });
 
+            modelBuilder.Entity("ShopNetCoreApi.Models.Entities.Skill", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int?>("EmployeeId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Experience")
+                        .HasColumnType("int");
+
+                    b.Property<int>("IsDelete")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("EmployeeId");
+
+                    b.ToTable("Skills");
+                });
+
             modelBuilder.Entity("ShopNetCoreApi.Models.Entities.Transaction", b =>
                 {
                     b.Property<int>("Id")
@@ -478,21 +616,6 @@ namespace ShopNetCoreApi.Migrations
                     b.ToTable("Transactions");
                 });
 
-            modelBuilder.Entity("ShopNetCoreApi.Models.Entities.Version", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Versions");
-                });
-
             modelBuilder.Entity("ShopNetCoreApi.Models.Entities.AppUserRole", b =>
                 {
                     b.HasOne("ShopNetCoreApi.Models.Entities.AppUser", "AppUser")
@@ -523,6 +646,24 @@ namespace ShopNetCoreApi.Migrations
                     b.Navigation("AppUser");
 
                     b.Navigation("Product");
+                });
+
+            modelBuilder.Entity("ShopNetCoreApi.Models.Entities.Education", b =>
+                {
+                    b.HasOne("ShopNetCoreApi.Models.Entities.Employee", "Employee")
+                        .WithMany("Educations")
+                        .HasForeignKey("EmployeeId");
+
+                    b.Navigation("Employee");
+                });
+
+            modelBuilder.Entity("ShopNetCoreApi.Models.Entities.JobHistory", b =>
+                {
+                    b.HasOne("ShopNetCoreApi.Models.Entities.Employee", "Employee")
+                        .WithMany("JobHistorys")
+                        .HasForeignKey("EmployeeId");
+
+                    b.Navigation("Employee");
                 });
 
             modelBuilder.Entity("ShopNetCoreApi.Models.Entities.Order", b =>
@@ -610,6 +751,15 @@ namespace ShopNetCoreApi.Migrations
                     b.Navigation("Product");
                 });
 
+            modelBuilder.Entity("ShopNetCoreApi.Models.Entities.Skill", b =>
+                {
+                    b.HasOne("ShopNetCoreApi.Models.Entities.Employee", "Employee")
+                        .WithMany("Skills")
+                        .HasForeignKey("EmployeeId");
+
+                    b.Navigation("Employee");
+                });
+
             modelBuilder.Entity("ShopNetCoreApi.Models.Entities.Transaction", b =>
                 {
                     b.HasOne("ShopNetCoreApi.Models.Entities.AppUser", "AppUser")
@@ -634,6 +784,15 @@ namespace ShopNetCoreApi.Migrations
             modelBuilder.Entity("ShopNetCoreApi.Models.Entities.Category", b =>
                 {
                     b.Navigation("ProductInCategories");
+                });
+
+            modelBuilder.Entity("ShopNetCoreApi.Models.Entities.Employee", b =>
+                {
+                    b.Navigation("Educations");
+
+                    b.Navigation("JobHistorys");
+
+                    b.Navigation("Skills");
                 });
 
             modelBuilder.Entity("ShopNetCoreApi.Models.Entities.Function", b =>

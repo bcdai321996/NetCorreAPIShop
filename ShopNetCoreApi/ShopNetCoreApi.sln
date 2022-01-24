@@ -13,9 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopNetCoreApi.Models", "Sh
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopNetCoreApi.Service", "ShopNetCoreApi.Service\ShopNetCoreApi.Service.csproj", "{D5DBDE30-4095-44E2-99E7-2D3D255DC88B}"
 EndProject
-Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{98BAAE02-49F9-406A-BFBC-18F910C1424B}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProjectShopping", "..\UnitTestProjectShopping\UnitTestProjectShopping.csproj", "{A7C82374-91B1-4CD9-B23B-866556F6E75E}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{DAC3AED7-DCD5-42AE-9D5C-5C62A1955799}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,14 +43,14 @@ Global
 		{D5DBDE30-4095-44E2-99E7-2D3D255DC88B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5DBDE30-4095-44E2-99E7-2D3D255DC88B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5DBDE30-4095-44E2-99E7-2D3D255DC88B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{98BAAE02-49F9-406A-BFBC-18F910C1424B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{98BAAE02-49F9-406A-BFBC-18F910C1424B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{98BAAE02-49F9-406A-BFBC-18F910C1424B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{98BAAE02-49F9-406A-BFBC-18F910C1424B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A7C82374-91B1-4CD9-B23B-866556F6E75E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A7C82374-91B1-4CD9-B23B-866556F6E75E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7C82374-91B1-4CD9-B23B-866556F6E75E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7C82374-91B1-4CD9-B23B-866556F6E75E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAC3AED7-DCD5-42AE-9D5C-5C62A1955799}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAC3AED7-DCD5-42AE-9D5C-5C62A1955799}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAC3AED7-DCD5-42AE-9D5C-5C62A1955799}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAC3AED7-DCD5-42AE-9D5C-5C62A1955799}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

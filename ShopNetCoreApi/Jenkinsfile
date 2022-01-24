@@ -4,12 +4,8 @@ pipeline {
     DOCKER_IMAGE = "shopnetcoreapi"
   }
   stages {
-     stage('hello') {
-            steps {
-                echo "Hello World!"
-                bat "echo Hello from the shell"
-            }
-        }
+    stage 'Checkout'
+        checkout scm
     stage("build") {
       agent { node {label 'master'}}
       environment {

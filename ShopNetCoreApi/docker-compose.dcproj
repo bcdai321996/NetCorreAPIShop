@@ -3,7 +3,7 @@
   <PropertyGroup Label="Globals">
     <ProjectVersion>2.1</ProjectVersion>
     <DockerTargetOS>Linux</DockerTargetOS>
-    <ProjectGuid>98baae02-49f9-406a-bfbc-18f910c1424b</ProjectGuid>
+    <ProjectGuid>dac3aed7-dcd5-42ae-9d5c-5c62a1955799</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/swagger</DockerServiceUrl>
     <DockerServiceName>shopnetcoreapi</DockerServiceName>
